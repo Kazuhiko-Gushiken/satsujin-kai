@@ -12,4 +12,5 @@ body {
 .blurback {
   background-color: rgba(0, 0, 0, 0.61);
   backdrop-filter: blur(5px);
+  height: 100%;
 }
