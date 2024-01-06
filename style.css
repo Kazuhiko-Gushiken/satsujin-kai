@@ -9,3 +9,7 @@ body {
 .sixtypx {
   font-size: 120px;
 }
+.blurback {
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(5px);
+}
