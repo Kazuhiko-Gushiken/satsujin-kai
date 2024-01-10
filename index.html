@@ -11,11 +11,30 @@
     <meta content="#000000" data-react-helmet="true" name="theme-color"/>
   </head>
   <body>
-    <div class="blurback">
-    <div  class="title">
-    <h1 class="sixtypx">Satsujin-kai</h1>
-    <p>This is a work in progress</p>
+    <div>
+    <div class="disclaimerscreen disclaimerlayer" id="closedisclaimer">
+      <img src="./images/grey tick.png">
+      <h2 style="color:white">Disclaimer!</h2>
+      <p style="color:white">The following content may be too violet for a younger audience. This content is completely fictional and I prohibit any actions to be copied. Continue at your own risk.</p>
+      <button class="disclaimerbutton" onclick="disclaimeryes()">Accept</button>
+      <button class="disclaimerbutton" onclick="disclaimerno()">Reject</button>
     </div>
+    <div class="blurback blurlayer" id="blurback"></div>
+    <div class="bottom-layer everything-home">
+      <div class="title">
+        <h1 class="sixtypx">Satsujin-kai</h1>
+        <p>This is a work in progress</p>
+      </div>
     </div>
+  </div>
   </body>
+  <script>
+    function disclaimeryes() {
+      document.getElementById("closedisclaimer").style.display = "none";
+      document.getElementById("blurback").style.display = "none";
+    }
+    function disclaimerno() {
+      window.location = "https://www.google.com"
+    }
+  </script>
 </html>
