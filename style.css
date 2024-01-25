@@ -1,5 +1,23 @@
 body {
+  background-attachment: fixed;
+  content: "";
+  display: block;
+  height: var(--background-height);
+  left: 0;
+  pointer-events: auto;
+  position: inital;
+  top: 0;
+  transform: scale(1);
+  width: 100vw;
+  z-index: 0;
+  background-image: url('./images/cross.svg');
+  background-size: 13px;
+  background-position: center;
+  background-repeat: repeat;
   background-color: black;
+  word-wrap: normal;
+  overflow-x: hidden;
+  max-width: 99%;
 }
 .title {
   text-align: center;
