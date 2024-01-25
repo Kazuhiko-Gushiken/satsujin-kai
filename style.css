@@ -7,7 +7,6 @@ body {
   pointer-events: auto;
   position: inital;
   top: 0;
-  transform: scale(1);
   width: 100vw;
   z-index: 0;
   background-image: url('./images/cross.svg');
