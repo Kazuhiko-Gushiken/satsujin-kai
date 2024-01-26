@@ -44,7 +44,7 @@
           </ul>
           <div class="center-it">
             <form style="display:flex">
-            <input type="text" class="inputboxfancy" id="cod" name="cod" placeholder="Enter Code" autocomplete="off" spellcheck="false">
+            <input type="text" class="inputboxfancy" id="code" name="code" placeholder="Enter Code" autocomplete="off" spellcheck="false">
             <button onclick="entercode()" class="codebtn">
               <i class="fa fa-search"></i>
             </button>
@@ -64,7 +64,7 @@
       window.location = "https://www.google.com"
     }
     function entercode() {
-        var cde = document.getElementById("cod").value;
+        var cde = document.getElementById("code").value;
         if (cde.trim() !== '') {
             window.location = "https://www.satsujin-kai.com/events/" + cde;
         } else {
