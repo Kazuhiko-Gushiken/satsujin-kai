@@ -168,3 +168,10 @@ a {
   height: 1rem;
   width: 1rem;
 }
+.history_div {
+  color: white;
+  align-items: center;
+  margin-top: 13%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
