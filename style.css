@@ -1,3 +1,8 @@
+html {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
   background-attachment: fixed;
   content: "";
@@ -170,11 +175,11 @@ a {
 }
 .history_div {
   position: absolute;
-  width: 100vw;
   padding: max(0.5vw, 2rem) max(3vw, 1rem);
+  display: flex;
+  flex-direction: column;
   color: white;
-  align-items: center;
-  margin-top: 9%;
+  align-items: flex-start;
   margin-left: 15%;
   margin-right: 15%;
   z-index: 4;
@@ -194,10 +199,9 @@ a {
 
 .card {
     position: relative;
-    padding: max(10vw, 6rem);
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
+    padding-top: max(10vw, 6rem);
+    height: 50vh;
+    display: flex;
 }
 
 .spoiler-roster {
