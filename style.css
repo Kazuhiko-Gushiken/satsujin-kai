@@ -1,5 +1,4 @@
 html {
-    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -20,7 +19,6 @@ body {
   background-repeat: repeat;
   background-color: black;
   word-wrap: normal;
-  overflow-x: hidden;
   max-width: 99%;
 }
 a {
@@ -213,4 +211,13 @@ a {
 .spoiler-roster:hover {
     background-color: inherit;
     color: inherit;
+}
+
+/*.container could be the body element or the <html>...</html>*/
+.container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.container::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
 }
