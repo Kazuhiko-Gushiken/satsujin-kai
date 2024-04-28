@@ -41,7 +41,7 @@ a {
   font-size: 120px;
 }
 .blurback {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   -webkit-backdrop-filter: blur(5px);
   -moz-backdrop-filter: blur(5px);
@@ -101,7 +101,8 @@ a {
 }
 .navbar-nav {
   position: absolute;
-  width: 100vw;
+  max-width: 93vw;
+  width: 93vw;
   padding: max(0.5vw, 2rem) max(3vw, 1rem);
   display: flex;
   flex-direction: row;
