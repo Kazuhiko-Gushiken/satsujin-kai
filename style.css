@@ -201,6 +201,18 @@ a {
   z-index: 4;
 }
 
+.activity-div {
+  position: absolute;
+  padding: max(0.5vw, 2rem) max(3vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: flex-start;
+  margin-left: 15%;
+  margin-right: 15%;
+  z-index: 4;
+}
+
 .card {
     position: relative;
     padding-top: max(10vw, 6rem);
