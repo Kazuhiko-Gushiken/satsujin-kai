@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Satsujin-kai</title>
+    <link rel="icon" href="../images/icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <meta content="Satsujin-kai" property="og:title" />
+    <meta content="Peace was never an option, it was just an illusion." property="og:description"/>
+    <meta content="https://satsujin-kai.com/" property="og:url" />
+    <meta content="https://satsujin-kai.com/images/icon.png" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div>
+    <div class="disclaimerscreen disclaimerlayer" id="closedisclaimer">
+        <img alt="grey_tick" src="../images/grey tick.png">
+        <h2 style="color:white">Disclaimer!</h2>
+        <p style="color:white">The following content may be too violent for a younger audience. This content is completely fictional and I prohibit any actions to be copied. Continue at your own risk.</p>
+        <button class="disclaimerbutton" onclick="disclaimeryes()">Accept</button>
+        <button class="disclaimerbutton" onclick="disclaimerno()">Reject</button>
+    </div>
+    <div class="blurback blurlayer" id="blurback"></div>
+    <div class="bottom-layer everything-home">
+        <header>
+            <nav class="navbar-nav">
+                <a title="Satsujin-kai" class="title-icon">
+                    <img alt="icon" width="80" height="80" src="./images/icon.png">
+                    <span class="title-font">Satsujin-kai</span>
+                </a>
+                <ul class="navbar-nav-list">
+                    <li>
+                        <a class="navbar-nav-link center-item" title="History" href="../index.html">History</a>
+                    </li>
+                    <li>
+                        <a class="navbar-nav-link center-item" title="Roster" href="../pages/roster.html">Roster</a>
+                    </li>
+                    <li>
+                        <a class="navbar-nav-link center-item" title="Activity">Activity</a>
+                    </li>
+                    <li>
+                        <a class="navbar-nav-link center-item" title="Incidents">Incidents</a>
+                    </li>
+                </ul>
+                <div class="center-it">
+                    <div style="display:flex">
+                        <input type="text" class="inputboxfancy" id="code" name="code" placeholder="Enter Code" autocomplete="off" spellcheck="false">
+                        <button onclick="entercode()" class="codebtn" id="codebtn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="roster-div card" id="roster">
+            <div>
+                <h1 style="center">Roster</h1>
+                <br/>
+                <p>Yeah right, you really thought we would tell you who we are or how many of us there are? If you're that curious, you can try to find out; no guarantees you'll make it back safely.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function disclaimeryes() {
+      document.getElementById("closedisclaimer").style.display = "none";
+      document.getElementById("blurback").style.display = "none";
+    }
+    function disclaimerno() {
+      window.location = "https://www.google.com"
+    }
+    function entercode() {
+        var cde = document.getElementById("code").value;
+        if (cde.trim() !== '') {
+            window.location = "https://www.satsujin-kai.com/events/" + cde;
+        } else {
+            alert("Please enter a valid Code")
+        }
+
+    }
+
+    var inputcode = document.getElementById("code");
+
+    inputcode.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("codebtn").click();
+    }
+    });
+</script>
+</html>
