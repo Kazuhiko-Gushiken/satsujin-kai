@@ -216,7 +216,6 @@ a {
 .card {
     position: relative;
     padding-top: max(10vw, 6rem);
-    height: 50vh;
     display: flex;
 }
 
