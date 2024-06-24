@@ -108,7 +108,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  z-index:4
+  z-index:5
 }
 .navbar-nav-list {
   margin-left: 2.5rem;

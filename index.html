@@ -45,7 +45,7 @@
           <div class="center-it">
             <div style="display:flex">
             <input type="text" class="inputboxfancy" id="code" name="code" placeholder="Enter Code" autocomplete="off" spellcheck="false">
-            <button onclick="entercode()" class="codebtn">
+            <button onclick="entercode()" class="codebtn" id="codebtn">
               <i class="fa fa-search"></i>
             </button>
             </div>
@@ -70,8 +70,10 @@
         <p><i>"Peace was never an option, it was just an illusion."</i></p>
       </div>
       <div class="roster-div card">
-        <div class="spoiler-roster">
-          You thought. Ha.
+        <div>
+          <h1 style="center">Roster</h1>
+          <br/>
+          <p>Yeah right, you really thought we would tell you who we are or how many of us there are? If you're that curious, you can try to find out; no guarantees you'll make it back safely.</p>
         </div>
       </div>
     </div>
@@ -94,5 +96,12 @@
         }
 
     }
+
+    inputcode.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("codebtn").click();
+    }
+    });
   </script>
 </html>
